@@ -1,0 +1,95 @@
+\documentclass[a4paper, twocolumn]{article}
+\usepackage[fontsize=14pt]{fontsize}
+\usepackage{geometry}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{titleps}
+\usepackage{graphicx}
+\usepackage[letterspace=200]{microtype}
+\usepackage{array}
+
+\geometry{
+    a4paper,
+    total={170mm,257mm},
+    left=20mm,
+    top=20mm,
+}
+
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+\newcommand{\Cell}[1]{\begin{tabular}{l} #1 \end{tabular}}
+\newcommand{\VerticalCell}[1]{\begin{tabular}{l} \rotatebox{90}{#1} \end{tabular}}
+\newcommand{\Rotate}[1]{\rotatebox{90}{#1}}
+
+\begin{document}
+
+\begin{center}
+ 
+\scalebox{0.8}{
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline
+    \Cell{Название постоянной} &
+    \VerticalCell{Обозначение} &
+    \Cell{Единица\\измерения} &
+    \Cell{Значение\\1969 г.} &
+    \VerticalCell{Относитель-}
+    \kern-0.8em
+    \VerticalCell{ная погреш-}
+    \kern-1.3em
+    \VerticalCell{ность, $10^{-6}$} &
+    \Cell{Значение\\1963 г.} &
+    \VerticalCell{Относитель-}
+    \kern-0.8em
+    \VerticalCell{ная погреш-}
+    \kern-1.3em
+    \VerticalCell{ность, $10^{-6}$}
+    \\
+    \hline
+    \Cell{Заряд электрона} &
+    \Cell{$e$} &
+    \Cell{$10^{-19}$ \textit{к}} &
+    \Cell{1,6021917\\\,\quad(70)} &
+    \Cell{4,4} &
+    \Cell{1,60210\\\,\quad(2)} &
+    \Cell{12}
+    \\
+    \Cell{Постоянная Планка} &
+    \Cell{$h$} &
+    \Cell{$10^{-31}$ \textit{дж \kern-0.2em $\cdot$ \kern-0.2em с}} &
+    \Cell{6,626196\\\,\quad(50)} &
+    \Cell{7,6} &
+    \Cell{6,62559\\\,\,\,\,\,(16)} &
+    \Cell{24}
+    \\
+    \Cell{Масса электрона} &
+    \Cell{$m_e$} &
+    \Cell{$10^{-31}$ \textit{кг}} &
+    \Cell{9,109558\\\,\quad(54)} &
+    \Cell{6} &
+    \Cell{9,10908\\\,\,\,\,\,(13)} &
+    \Cell{14}
+    \\
+    \Cell{\,\,\,\,Число\\Авогадро} &
+    \Cell{$N$} &
+    \Cell{$10^{28}$ \textit{кмоль}} &
+    \Cell{6,022169\\\,\quad(40)} &
+    \Cell{6,6} &
+    \Cell{6,02252\\\quad(9)} &
+    \Cell{15}
+    \\
+    \hline
+\end{tabular}
+}
+\end{center}
+
+\noindent
+мерениях 1969 года значительно меньше, чем в измерениях 1963 года.
+
+Эти измерения хорошо иллюстрируют связь, которая имеется между значениями фундаментальных постояннных: существенное изменение значений одной из них влечет за собой заметные изменения значений значений остальных величин.
+
+Интересно также наблюдать, как меняется наше знание фундаментальных постоянных по мере развития физики. В качестве характерного примера мы приводим на рисунке 2 график, который показывает, как менялось принятое значение массы электрона в период после 1950 года. Около каждой точки указаны значения $m_e$ (в единицах $10^{-31}$ \textit{кг}). Вертикальными черточками показаны погрешности, приписываемые этим значениям. По оси ординат отложены относительные отклонения значений $m_e$ от значения, принятого в 1969 году.
+
+\end{document}

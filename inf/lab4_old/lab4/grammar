@@ -1,0 +1,4 @@
+json = object | array | str | num | bool | null
+object = { fields }
+fields = field | field comma_fields
+field = str : json

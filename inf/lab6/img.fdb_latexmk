@@ -1,0 +1,24 @@
+# Fdb version 4
+["pdflatex"] 1733923284.4233 "/home/mp2720/itmo/inf/lab6/img.tex" "img.pdf" "img" 1733923284.60004 0
+  "/home/mp2720/itmo/inf/lab6/img.tex" 1733923281.91665 511 253e2673bf855e426a0700a97ac84ce5 ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1727349926 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1727349926 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1727349926 71627 94eb9990bed73c364d7f53f960cc8c5b ""
+  "/usr/share/texmf-dist/tex/latex/base/article.cls" 1727349926 20144 147463a6a579f4597269ef9565205cfe ""
+  "/usr/share/texmf-dist/tex/latex/base/size10.clo" 1727349926 8448 dbc0dbf4156c0bb9ba01a1c685d3bad0 ""
+  "/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def" 1727349926 19448 1e988b341dda20961a6b931bcde55519 ""
+  "/usr/share/texmf-dist/tex/latex/graphics/trig.sty" 1727349926 4023 293ea1c16429fc0c4cf605f4da1791a9 ""
+  "/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1727349926 30006 3d512c0edd558928ddea1690180ef77e ""
+  "/usr/share/texmf-dist/tex/latex/pict2e/p2e-pdftex.def" 1727349926 1168 efb94e82cc1584d4f62679f3487b5339 ""
+  "/usr/share/texmf-dist/tex/latex/pict2e/pict2e.cfg" 1727349926 1920 2185073db458618f4a8a794158cf3681 ""
+  "/usr/share/texmf-dist/tex/latex/pict2e/pict2e.sty" 1727349926 30933 ccdcd551eb516817cc8f41862254e6e7 ""
+  "/usr/share/texmf-dist/web2c/texmf.cnf" 1727349926 41588 b43d3e860a4f94167ee1e725ff526a72 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1733911419.43333 5309552 64ad653fe89e6d9f103fed5d058dac6f ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1733911398 7192542 17d0702c8ea1fcdf0536c48daa181858 ""
+  "img.aux" 1733923284.58332 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "img.tex" 1733923281.91665 511 253e2673bf855e426a0700a97ac84ce5 ""
+  (generated)
+  "img.aux"
+  "img.log"
+  "img.pdf"
+  (rewritten before read)

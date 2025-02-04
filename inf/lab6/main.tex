@@ -1,0 +1,41 @@
+\documentclass[a4paper]{article}
+\usepackage[fontsize=12.3pt]{fontsize}
+\usepackage{geometry}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{titleps}
+\usepackage{graphicx}
+\usepackage[letterspace=200]{microtype}
+\usepackage{epstopdf}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage[symbol]{footmisc}
+
+\geometry{
+    a4paper,
+    total={170mm,257mm},
+    left=20mm,
+    top=20mm,
+}
+
+\newpagestyle{pagenumberfooterright}{
+  \setfoot{}{}{\thepage}
+}
+
+\setcounter{page}{0}
+
+\begin{document}
+    \thispagestyle{empty}
+	\input{title.tex}
+    \pagebreak
+    \begin{multicols*}{2}
+        \setcounter{page}{45}
+        \input{1.tex}
+        \pagebreak
+        \setcounter{page}{57}
+        \input{2.tex}
+    \end{multicols*}
+\end{document}

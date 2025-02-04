@@ -1,0 +1,14 @@
+# Fdb version 4
+["pdflatex"] 1734949710.81445 "/home/mp2720/itmo/inf/lab6/2.tex" "2.pdf" "2" 1734949711.0978 2
+  "/home/mp2720/itmo/inf/lab6/2.tex" 1734949710.69985 3942 e3a50ba08b22176fc0fd5f529c56adb8 ""
+  "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1727349926 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1727349926 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/usr/share/texmf-dist/web2c/texmf.cnf" 1727349926 41588 b43d3e860a4f94167ee1e725ff526a72 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1733911398 7192542 17d0702c8ea1fcdf0536c48daa181858 ""
+  "2.aux" 1734946075.33661 132 c89ce2280ab791babe7d68932f1c9de6 "pdflatex"
+  "2.tex" 1734949710.69985 3942 e3a50ba08b22176fc0fd5f529c56adb8 ""
+  (generated)
+  "2.aux"
+  "2.log"
+  "2.pdf"
+  (rewritten before read)

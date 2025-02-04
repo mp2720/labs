@@ -1,0 +1,112 @@
+@startuml
+
+set namespaceSeparator none
+
+'package "mp2720.lab3.core" {
+    interface Actor {
+        +onAddedToScene(scene)
+        +doAction(scene)
+    }
+
+    interface Visible {
+        +getCompounds()
+        +getDescription()
+    }
+
+    interface Viewer {
+        +view(visible)
+    }
+
+    abstract class Event {
+        +Event(producedBy: Actor)
+        +getProducedBy()
+    }
+
+    abstract class SoundEvent {
+        +SoundEvent(byActor)
+    }
+
+    class VisibilityChangedEvent {
+        +VisibilityChangedEvent(byActor: Actor, isVisible)
+    }
+
+    Event <|-- SoundEvent
+    Event <|-- VisibilityChangedEvent
+
+    interface EventListener {
+        +onEventOccured(event)
+    }
+
+    abstract class AutomatonActor implements Actor {
+        {abstract} #firstState()
+    }
+
+    class Logger {
+        +Logger(indentLevel)
+        +write(message)
+        +makeChild()
+    }
+
+    class Scene {
+        +publishEvent(event)
+        +registerEventListener(listener)
+        +registerVisibleActor(visibleActor)
+        +unregisterVisibleActor(visibleActor)
+        +addActor(actor)
+        +play()
+    }
+
+    Visible --o Scene
+    Actor --o Scene
+    EventListener --o Scene
+
+    Scene --> Logger
+    Viewer --> Visible
+'}
+
+class Human extends AutomatonActor {
+    +changeHealth(value)
+    +isHealthy()
+}
+
+class Kubik extends Human implements Visible, EventListener {
+}
+
+class InRoomPerson extends Human implements Visible, EventListener {
+}
+
+class RoomScene extends Scene {
+}
+
+class KubikStoryScene extends Scene {
+}
+
+class Attacker extends Human {
+}
+
+class TalkEvent extends SoundEvent {
+}
+
+abstract class Item implements Visible {
+    +getName()
+    +getColor()
+    +getMaterial()
+}
+
+class Hat extends Item {}
+
+class Horn extends Item {}
+
+class SpiralWire extends Item {}
+
+class RadioHeadphones extends Item {}
+
+class MetallBox extends Item {}
+
+class Megaphone extends Item {}
+
+class QuestionEvent extends TalkEvent {
+    QuestionEvent(byActor, toActor)
+}
+
+@enduml

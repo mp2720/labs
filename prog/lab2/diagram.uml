@@ -1,0 +1,83 @@
+@startuml
+set namespaceSeparator none
+
+package "ru.ifmo.se.pokemons" {
+    class Pokemon
+    class Move
+    class StatusMove
+    class PhysicalMove
+    class DamageMove
+    class SpecialMove
+
+    DamageMove --|> Move
+    StatusMove --|> Move
+    PhysicalMove --|> DamageMove
+    SpecialMove --|> DamageMove
+}
+
+
+package "mp2720.lab2" {
+    package "pokemons" {
+        class Mankey
+        class Kyogre
+        class Primeape extends Mankey
+
+        class Budew
+        class Roselia extends Budew
+        class Roserade extends Budew
+    }
+
+    package "moves" {
+        class BulkUp
+        class Facade
+        class RockTomb
+
+        class AquaTail
+        class MuddyWater
+        class RockSlide
+        class Scald
+
+        class StoneEdge
+
+        class Rest
+        class SludgeBomb
+        class BulletSeed
+        class SwordsDance
+    }
+
+'    Mankey ..> BulkUp
+'    Mankey ..> Facade
+'    Mankey ..> RockTomb
+'
+'    Kyogre ..> AquaTail
+'    Kyogre ..> MuddyWater
+'    Kyogre ..> RockSlide
+'    Kyogre ..> Scald
+'
+'    Primeape ..> StoneEdge
+'
+'    Budew ..> Rest
+'    Budew ..> SludgeBomb
+'    Roselia ..> BulletSeed
+'    Roserade ..> SwordsDance
+}
+
+Pokemon <|-- Mankey
+Pokemon <|-- Kyogre
+Pokemon <|-- Budew
+
+
+StatusMove <|-- BulkUp
+PhysicalMove<|-- Facade
+PhysicalMove <|-- RockTomb
+PhysicalMove <|-- AquaTail
+SpecialMove <|-- MuddyWater
+PhysicalMove <|-- RockSlide
+SpecialMove <|-- Scald
+PhysicalMove <|-- StoneEdge
+StatusMove <|-- Rest
+SpecialMove <|-- SludgeBomb
+SpecialMove <|-- BulletSeed
+StatusMove <|-- SwordsDance
+
+@enduml

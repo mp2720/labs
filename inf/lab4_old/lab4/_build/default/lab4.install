@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/lab4/META"
+  "_build/install/default/lib/lab4/dune-package"
+  "_build/install/default/lib/lab4/opam"
+]
+bin: [
+  "_build/install/default/bin/lab4"
+]

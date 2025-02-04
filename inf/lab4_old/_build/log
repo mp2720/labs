@@ -1,0 +1,6 @@
+# dune init exec lab4
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /home/mp2720/.cache/dune/db
+# Workspace root: /home/mp2720/itmo/inf/lab4
+# Auto-detected concurrency: 16
